@@ -294,7 +294,7 @@ for number in range(5):
         if error == True and item_int < 5:
             print(f"You have chosen {item_list[item_int]}")
             break
-        elif error == True and item_int >= 5:
+        if error == True and item_int >= 5:
             print("Item not recognized")
     except ValueError:
         print("Only insert numbers and try again!")
@@ -313,7 +313,7 @@ for number in range(5):
         if error_rarity == True and rarity_int < 5:
             print(f"You have chosen {rarity_list[rarity_int]}")
             break
-        elif error_rarity == True and rarity_int >= 5:
+        if error_rarity == True and rarity_int >= 5:
             print("Item not recognized")
     except ValueError:
         print("Only insert numbers and try again!")
