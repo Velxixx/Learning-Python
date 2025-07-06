@@ -291,10 +291,10 @@ for number in range(5):
         item_selection = input(f"Select your item: {item_list[0:5]}")
         item_int = int(item_selection)
         error = True
-        if error == True and item_int < 5:
+        if error and item_int < 5:
             print(f"You have chosen {item_list[item_int]}")
             break
-        if error == True and item_int >= 5:
+        if error and item_int >= 5:
             print("Item not recognized")
     except ValueError:
         print("Only insert numbers and try again!")
@@ -310,10 +310,10 @@ for number in range(5):
         rarity_selection = input(f"Select rarity: {rarity_list[0:5]}")
         rarity_int = int(rarity_selection)
         error_rarity = True
-        if error_rarity == True and rarity_int < 5:
+        if error_rarity and rarity_int < 5:
             print(f"You have chosen {rarity_list[rarity_int]}")
             break
-        if error_rarity == True and rarity_int >= 5:
+        if error_rarity and rarity_int >= 5:
             print("Item not recognized")
     except ValueError:
         print("Only insert numbers and try again!")
